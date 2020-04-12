@@ -31,7 +31,7 @@ int main() {
             std::cout<<"Pawn 2: Position = 0"<<std::endl;
             std::cout<<"Pawn 3: Position = 0"<<std::endl;
             std::cout<<"Pawn 4: Position = 0"<<std::endl;
-            std::cout<<"\n Press ENTER to end your turn "<< playerDataClassObject.displayPlayerNames(k) << "." <<std::endl;
+            std::cout<<"\n Press ENTER to end your turn "<< playerDataClassObject.displayPlayerNames(k) << ". " <<std::endl;
         } else{
             std::cout << "I meant ONLY the ENTER key... Oh well.\n";
             continue;
