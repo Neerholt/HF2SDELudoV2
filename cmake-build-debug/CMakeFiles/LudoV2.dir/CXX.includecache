@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Victo/CLionProjects/LudoV2/Dice.h
+
+C:/Users/Victo/CLionProjects/LudoV2/PlayerData.h
+vector
+-
+string
+-
+
+C:/Users/Victo/CLionProjects/LudoV2/main.cpp
+iostream
+-
+string
+-
+playerData.h
+C:/Users/Victo/CLionProjects/LudoV2/PlayerData.h
+Dice.h
+C:/Users/Victo/CLionProjects/LudoV2/Dice.h
+

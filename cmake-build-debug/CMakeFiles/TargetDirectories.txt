@@ -1,0 +1,3 @@
+C:/Users/Victo/CLionProjects/LudoV2/cmake-build-debug/CMakeFiles/LudoV2.dir
+C:/Users/Victo/CLionProjects/LudoV2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Victo/CLionProjects/LudoV2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
