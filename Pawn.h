@@ -5,10 +5,19 @@
 #ifndef LUDOV2_PAWN_H
 #define LUDOV2_PAWN_H
 
+#include <iostream>
+#include <vector>
+
 
 class Pawn {
+private:
+    std::vector<int> playerBoardPosition;
 public:
-    int displayPlayerPosition();
+    void displayPlayerPosition(int ,int);//Take two parameter first is the player id in the vector, and the second parameter is the dice roll
+    int pawnDecision();
+    void getBoardInformation();
+    void pawnDataDevTool();
+    void printVector();
 };
 
 

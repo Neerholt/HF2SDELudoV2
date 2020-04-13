@@ -7,13 +7,13 @@
 
 
 bool AI::AIOn() {
-    std::cout << "AI has been enable ";
+    std::cout << "AI has been enable "<< std::endl;
     ai = true;
     return ai;
 }
 
 bool AI::AIOff() {
-    std::cout << "AI has been disabled ";
+    std::cout << "AI has been disabled " << std::endl;
     ai = false;
     return ai;
 }

@@ -5,10 +5,29 @@
 #include "Pawn.h"
 #include <iostream>
 
-int Pawn::displayPlayerPosition() {
-    std::cout<<"Pawn 1: Position = 0"<<std::endl;
-    std::cout<<"Pawn 2: Position = 0"<<std::endl;
-    std::cout<<"Pawn 3: Position = 0"<<std::endl;
-    std::cout<<"Pawn 4: Position = 0"<<std::endl;
-    return 0;
+void Pawn::displayPlayerPosition(int playerID, int diceRoller) {
+    if(diceRoller == 6){
+        playerBoardPosition.push_back(diceRoller);
+        playerBoardPosition.push_back(playerID);
+        std::cout << "You got a " << diceRoller << " and a pawn has been added to the field " << std::endl;
+    } else {
+        playerBoardPosition.push_back(diceRoller);
+        playerBoardPosition.push_back(playerID);
+        std::cout <<"You rolled a " << diceRoller  <<  " and you have 0 pawns on the field " << std::endl;
+    }
+
 }
+
+
+void Pawn::pawnDataDevTool() {
+    std::cout << " Vector Size " << "[" << playerBoardPosition.size() << "]"<< " Dice Roll Value " << "[" << playerBoardPosition.front()<< "]"  << " Player ID " << "[" << playerBoardPosition.back() <<"]" <<std::endl;
+}
+
+void Pawn::printVector() {
+    auto pos = playerBoardPosition.begin();
+    std::cout<<"Print vector ";
+    while(pos != playerBoardPosition.end()){
+        std::cout << *pos++ << " ";
+    }
+}
+
