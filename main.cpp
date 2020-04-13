@@ -43,8 +43,8 @@ int main() {
         std::cin.ignore();//ignore the ENTER after the user ENTERS the last username. DON'T MOVE ME!!
         std::cout << "Press the ENTER key to roll the dice "<</*Get data from the pawn class like if he can move a pawn or not or say you roll and you have 0 pawns on the files and you need to roll a 6 to get a pawn on the filed*/ playerDataClassObject.displayPlayerNames(k)<< "."<<std::endl;
         if (std::cin.get() == '\n'){
+            std::cout<< playerDataClassObject.displayPlayerNames(k) << " ";
             diceClassObject.diceRoll();//Dice class
-            std::cout<< playerDataClassObject.displayPlayerNames(k)<< " you have " /*Use a game object from board or pawn */ "0 pawns on the field\n";
             pawnClassObject.displayPlayerPosition(k, diceClassObject.ran);//playerDataClassObject.displayPlayerNames(k) would be the best solution but it's string and a long story.
             /*Dev Tool*/
             std::cout <<  "AI Status " << "[" <<aiClassObject.ai<< "] ";//Developer tool to tell if AI is true = 1 of false = 1?

@@ -8,7 +8,7 @@
 
 int Dice::diceRoll() {
     ran = rand()%6+1;
-    std::cout << "You rolled a " << ran << std::endl;
+    std::cout << "you rolled a " << ran << std::endl;
     return ran;
 }
 
