@@ -124,6 +124,33 @@ LudoV2\fast:
 	$(MAKE) -f CMakeFiles\LudoV2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LudoV2.dir\build
 .PHONY : LudoV2\fast
 
+AI.obj: AI.cpp.obj
+
+.PHONY : AI.obj
+
+# target to build an object file
+AI.cpp.obj:
+	$(MAKE) -f CMakeFiles\LudoV2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LudoV2.dir\AI.cpp.obj
+.PHONY : AI.cpp.obj
+
+AI.i: AI.cpp.i
+
+.PHONY : AI.i
+
+# target to preprocess a source file
+AI.cpp.i:
+	$(MAKE) -f CMakeFiles\LudoV2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LudoV2.dir\AI.cpp.i
+.PHONY : AI.cpp.i
+
+AI.s: AI.cpp.s
+
+.PHONY : AI.s
+
+# target to generate assembly for a file
+AI.cpp.s:
+	$(MAKE) -f CMakeFiles\LudoV2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LudoV2.dir\AI.cpp.s
+.PHONY : AI.cpp.s
+
 Dice.obj: Dice.cpp.obj
 
 .PHONY : Dice.obj
@@ -241,6 +268,9 @@ help:
 	@echo ... LudoV2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AI.obj
+	@echo ... AI.i
+	@echo ... AI.s
 	@echo ... Dice.obj
 	@echo ... Dice.i
 	@echo ... Dice.s

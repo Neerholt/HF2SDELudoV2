@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Victo/CLionProjects/LudoV2/AI.cpp
+AI.h
+C:/Users/Victo/CLionProjects/LudoV2/AI.h
+iostream
+-
+
+C:/Users/Victo/CLionProjects/LudoV2/AI.h
+iostream
+-
+string
+-
+
 C:/Users/Victo/CLionProjects/LudoV2/Dice.h
 
 C:/Users/Victo/CLionProjects/LudoV2/Pawn.h
@@ -27,4 +39,6 @@ Dice.h
 C:/Users/Victo/CLionProjects/LudoV2/Dice.h
 Pawn.h
 C:/Users/Victo/CLionProjects/LudoV2/Pawn.h
+AI.h
+C:/Users/Victo/CLionProjects/LudoV2/AI.h
 

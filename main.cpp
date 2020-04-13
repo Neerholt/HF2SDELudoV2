@@ -6,6 +6,7 @@
 #include "playerData.h"
 #include "Dice.h"
 #include "Pawn.h"
+#include "AI.h"
 
 int main() {
 
@@ -16,11 +17,21 @@ int main() {
     PlayerData playerDataClassObject;
     Dice diceClassObject;
     Pawn pawnClassObject;
+    AI aiClassObject;
 
 
     //Ask the player about the amount of players/what there name is.
     playerDataClassObject.playerAmountValue();//PlayerData Class.
     playerDataClassObject.selectPlayerName();//PlayerData Class.
+    if(playerDataClassObject.playerAmount == 1){
+        std::cout << "AI has been enabled automatically by the game! "<<std::endl;
+        aiClassObject.ai = true;
+    } else{
+        aiClassObject.enableAI();//Ask the user if they would like to enable AI.
+    }
+
+   std::cout<< aiClassObject.ai << " AI is on boys "<<std::endl;//Delete later
+   std::cout<< aiClassObject.userAnswer << " AI is on boys "<<std::endl;//Delete later
 
     //Main Game Loop
     diceClassObject.resetDice();//Reset the dice

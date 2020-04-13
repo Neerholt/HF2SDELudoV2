@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LudoV2.dir/AI.cpp.obj"
   "CMakeFiles/LudoV2.dir/Dice.cpp.obj"
   "CMakeFiles/LudoV2.dir/Pawn.cpp.obj"
   "CMakeFiles/LudoV2.dir/PlayerData.cpp.obj"

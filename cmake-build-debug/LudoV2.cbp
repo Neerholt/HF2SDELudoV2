@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Victo/CLionProjects/LudoV2/AI.cpp">
+			<Option target="LudoV2"/>
+		</Unit>
+		<Unit filename="C:/Users/Victo/CLionProjects/LudoV2/AI.h">
+			<Option target="LudoV2"/>
+		</Unit>
 		<Unit filename="C:/Users/Victo/CLionProjects/LudoV2/Dice.cpp">
 			<Option target="LudoV2"/>
 		</Unit>

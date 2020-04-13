@@ -10,7 +10,7 @@ void PlayerData::playerAmountValue() {
     std::cin>>playerAmount;
     while(std::cin.fail()) {
         std::cout <<"Error: Enter an integer number!"<<std::endl;
-        std::cout << "Enter player amount [MAX 4: MIN 2]: ";
+        std::cout << "Enter player amount [MAX 4]: ";
         std::cin.clear();
         std::cin.ignore(256,'\n');
         std::cin >> playerAmount;

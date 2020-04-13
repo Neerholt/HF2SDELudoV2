@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Victo/CLionProjects/LudoV2/AI.cpp" "C:/Users/Victo/CLionProjects/LudoV2/cmake-build-debug/CMakeFiles/LudoV2.dir/AI.cpp.obj"
   "C:/Users/Victo/CLionProjects/LudoV2/Dice.cpp" "C:/Users/Victo/CLionProjects/LudoV2/cmake-build-debug/CMakeFiles/LudoV2.dir/Dice.cpp.obj"
   "C:/Users/Victo/CLionProjects/LudoV2/Pawn.cpp" "C:/Users/Victo/CLionProjects/LudoV2/cmake-build-debug/CMakeFiles/LudoV2.dir/Pawn.cpp.obj"
   "C:/Users/Victo/CLionProjects/LudoV2/PlayerData.cpp" "C:/Users/Victo/CLionProjects/LudoV2/cmake-build-debug/CMakeFiles/LudoV2.dir/PlayerData.cpp.obj"

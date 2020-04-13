@@ -134,12 +134,32 @@ CMakeFiles\LudoV2.dir\Pawn.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\LudoV2.dir\Pawn.cpp.s /c C:\Users\Victo\CLionProjects\LudoV2\Pawn.cpp
 <<
 
+CMakeFiles\LudoV2.dir\AI.cpp.obj: CMakeFiles\LudoV2.dir\flags.make
+CMakeFiles\LudoV2.dir\AI.cpp.obj: ..\AI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Victo\CLionProjects\LudoV2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LudoV2.dir/AI.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\LudoV2.dir\AI.cpp.obj /FdCMakeFiles\LudoV2.dir\ /FS -c C:\Users\Victo\CLionProjects\LudoV2\AI.cpp
+<<
+
+CMakeFiles\LudoV2.dir\AI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LudoV2.dir/AI.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe > CMakeFiles\LudoV2.dir\AI.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Victo\CLionProjects\LudoV2\AI.cpp
+<<
+
+CMakeFiles\LudoV2.dir\AI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LudoV2.dir/AI.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\LudoV2.dir\AI.cpp.s /c C:\Users\Victo\CLionProjects\LudoV2\AI.cpp
+<<
+
 # Object files for target LudoV2
 LudoV2_OBJECTS = \
 "CMakeFiles\LudoV2.dir\main.cpp.obj" \
 "CMakeFiles\LudoV2.dir\PlayerData.cpp.obj" \
 "CMakeFiles\LudoV2.dir\Dice.cpp.obj" \
-"CMakeFiles\LudoV2.dir\Pawn.cpp.obj"
+"CMakeFiles\LudoV2.dir\Pawn.cpp.obj" \
+"CMakeFiles\LudoV2.dir\AI.cpp.obj"
 
 # External object files for target LudoV2
 LudoV2_EXTERNAL_OBJECTS =
@@ -148,9 +168,10 @@ LudoV2.exe: CMakeFiles\LudoV2.dir\main.cpp.obj
 LudoV2.exe: CMakeFiles\LudoV2.dir\PlayerData.cpp.obj
 LudoV2.exe: CMakeFiles\LudoV2.dir\Dice.cpp.obj
 LudoV2.exe: CMakeFiles\LudoV2.dir\Pawn.cpp.obj
+LudoV2.exe: CMakeFiles\LudoV2.dir\AI.cpp.obj
 LudoV2.exe: CMakeFiles\LudoV2.dir\build.make
 LudoV2.exe: CMakeFiles\LudoV2.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Victo\CLionProjects\LudoV2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable LudoV2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Victo\CLionProjects\LudoV2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable LudoV2.exe"
 	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\LudoV2.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\ENTERP~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\LudoV2.dir\objects1.rsp @<<
  /out:LudoV2.exe /implib:LudoV2.lib /pdb:C:\Users\Victo\CLionProjects\LudoV2\cmake-build-debug\LudoV2.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
