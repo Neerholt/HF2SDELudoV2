@@ -27,5 +27,5 @@ void PlayerData::selectPlayerName(){
 }
 
 std::string PlayerData::displayPlayerNames(int l) {
-    return playerNameList[l];
+        return playerNameList[l];
 }

@@ -11,13 +11,13 @@
 class PlayerData {
 private:
     //DataTypes.
-    int playerAmount;
     int i = 0;
     std::string name;
     std::vector<std::string> playerNameList;
     bool winner = false;
 public:
     //Class Functions.
+    int playerAmount;
     void playerAmountValue();
     void selectPlayerName();
     std::string displayPlayerAmount();
