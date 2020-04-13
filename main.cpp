@@ -26,12 +26,14 @@ int main() {
     if(playerDataClassObject.playerAmount == 1){
         std::cout << "AI has been enabled automatically by the game! "<<std::endl;
         aiClassObject.ai = true;
+    } else if (playerDataClassObject.playerAmount == 4){
+        std::cout << "AI has been disabled automatically by the game! "<<std::endl;
+        aiClassObject.ai = false;
     } else{
         aiClassObject.enableAI();//Ask the user if they would like to enable AI.
     }
 
-   std::cout<< aiClassObject.ai << " AI is on boys "<<std::endl;//Delete later
-   std::cout<< aiClassObject.userAnswer << " AI is on boys "<<std::endl;//Delete later
+   std::cout << "[" <<aiClassObject.ai<< "]" << std::endl;//Developer tool to tell if AI is true = 1 of false = 1?
 
     //Main Game Loop
     diceClassObject.resetDice();//Reset the dice
