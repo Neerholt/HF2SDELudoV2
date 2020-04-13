@@ -11,7 +11,6 @@
 int main() {
 
     int k = 0;
-    char userInput;
 
     //Instantiate a object
     PlayerData playerDataClassObject;

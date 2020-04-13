@@ -1,5 +1,5 @@
 //
-// Created by Victo on 13-04-2020.
+// Created by Victor Neerholt, student at SDE Odense on 13-04-2020.
 //
 
 #include "AI.h"

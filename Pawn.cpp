@@ -1,5 +1,5 @@
 //
-// Created by Victo on 12-04-2020.
+// Created by Victor Neerholt, student at SDE Odense on 12-04-2020.
 //
 
 #include "Pawn.h"
