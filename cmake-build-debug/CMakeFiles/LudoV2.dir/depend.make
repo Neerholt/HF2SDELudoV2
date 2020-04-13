@@ -11,6 +11,7 @@ CMakeFiles\LudoV2.dir\PlayerData.cpp.obj: ..\PlayerData.cpp
 CMakeFiles\LudoV2.dir\PlayerData.cpp.obj: ..\PlayerData.h
 
 CMakeFiles\LudoV2.dir\main.cpp.obj: ..\Dice.h
+CMakeFiles\LudoV2.dir\main.cpp.obj: ..\Pawn.h
 CMakeFiles\LudoV2.dir\main.cpp.obj: ..\PlayerData.h
 CMakeFiles\LudoV2.dir\main.cpp.obj: ..\main.cpp
 
