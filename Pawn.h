@@ -9,7 +9,6 @@
 class Pawn {
 public:
     int displayPlayerPosition();
-
 };
 
 

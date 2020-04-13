@@ -40,3 +40,8 @@ void AI::enableAI() {
             break;
     }
 }
+
+void AI::AIBot(int dice) {
+    aiDiceRoll = dice;
+    return; aiDiceRoll;
+}

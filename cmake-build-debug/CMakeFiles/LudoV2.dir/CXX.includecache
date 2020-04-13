@@ -27,6 +27,10 @@ iostream
 -
 string
 -
+thread
+-
+chrono
+-
 playerData.h
 C:/Users/Victo/CLionProjects/LudoV2/PlayerData.h
 Dice.h

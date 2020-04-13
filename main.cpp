@@ -1,6 +1,8 @@
 //standard c++ class library.
 #include <iostream>
 #include <string>
+#include <thread>
+#include <chrono>
 
 //My own class library.
 #include "playerData.h"
@@ -10,7 +12,8 @@
 
 int main() {
 
-    int k = 0;
+    int k = 0;//Player While loop vector loop player
+    int p = 0;//AI While loop vector loop player
 
     //Instantiate a object
     PlayerData playerDataClassObject;
@@ -48,9 +51,26 @@ int main() {
             std::cout << "I meant ONLY the ENTER key... Oh well.\n";
             continue;
         }
-
         k++;
 
+        //AI Part!
+        /*
+        if(aiClassObject.ai == true){
+            while(p != playerDataClassObject.playerAmount){
+                std::cout<<"AI Bot "<< p;
+                aiClassObject.AIBot(diceClassObject.diceRoll());
+                std::cout<< aiClassObject.aiDiceRoll;
+                pawnClassObject.displayPlayerPosition();
+                std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+                p++;
+                break;
+            }
+        } else{
+            std::cout<< "NO AI"<<std::endl;
+        }
+         */
+
+        //Reset k so it does not end up going out of scope for my vector!
         if(k == playerDataClassObject.playerAmount){
             k = 0;
         }

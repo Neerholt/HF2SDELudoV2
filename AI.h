@@ -10,14 +10,15 @@
 
 class AI {
 private:
-    //char userAnswer;
+    char userAnswer;
     //bool ai = false;
 public:
-    char userAnswer;
+    int aiDiceRoll;
     bool ai = false;
     void enableAI();
-    bool AIOn();
-    bool AIOff();
+    bool AIOn();// Functions to keep my code DRY
+    bool AIOff();// Functions to keep my code DRY
+    void AIBot(int);
 };
 
 

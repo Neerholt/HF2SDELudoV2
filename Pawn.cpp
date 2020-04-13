@@ -10,6 +10,5 @@ int Pawn::displayPlayerPosition() {
     std::cout<<"Pawn 2: Position = 0"<<std::endl;
     std::cout<<"Pawn 3: Position = 0"<<std::endl;
     std::cout<<"Pawn 4: Position = 0"<<std::endl;
-    std::cout<<"I work?"<<std::endl;
     return 0;
 }
