@@ -1,7 +1,6 @@
 //standard c++ class library.
 #include <iostream>
 #include <string>
-#include <thread>
 #include <chrono>
 
 //My own class library.
@@ -14,7 +13,6 @@ int main() {
 
     int q = 1;//Round counter
     int k = 0;//Player While loop vector loop player
-    int p = 0;//AI While loop vector loop player
 
     //Instantiate a object
     PlayerData playerDataClassObject;
@@ -22,7 +20,7 @@ int main() {
     Pawn pawnClassObject;
     AI aiClassObject;
 
-
+    //Start of the game.
     //Ask the player about the amount of players/what there name is.
     playerDataClassObject.playerAmountValue();//PlayerData Class.
     playerDataClassObject.selectPlayerName();//PlayerData Class.
@@ -33,7 +31,7 @@ int main() {
         std::cout << "AI has been disabled automatically by the game! "<<std::endl;
         aiClassObject.ai = false;
     } else{
-        aiClassObject.enableAI();//Ask the user if they would like to enable AI.
+        aiClassObject.enableAI();//Ask the user would like to enable AI.
     }
 
 
@@ -45,12 +43,13 @@ int main() {
         if (std::cin.get() == '\n'){
             std::cout<< playerDataClassObject.displayPlayerNames(k) << " ";
             diceClassObject.diceRoll();//Dice class
-            pawnClassObject.displayPlayerPosition(k, diceClassObject.ran);//playerDataClassObject.displayPlayerNames(k) would be the best solution but it's string and a long story.
+            pawnClassObject.displayPlayerPosition(k, diceClassObject.ran, playerDataClassObject.playerAmount);//playerDataClassObject.displayPlayerNames(k) would be the best solution but it's string and a long story.
+            //pawnClassObject.getBoardInformation();
             /*Dev Tool*/
             std::cout <<  "AI Status " << "[" <<aiClassObject.ai<< "] ";//Developer tool to tell if AI is true = 1 of false = 1?
             std::cout <<  "Round " << "[" << q << "] ";
-            pawnClassObject.pawnDataDevTool();
-            pawnClassObject.printVector();
+            //pawnClassObject.pawnDataDevTool();
+            //pawnClassObject.printVector();
             /*Dev Tool*/
             std::cout<<"\n Press ENTER to end your turn "<< playerDataClassObject.displayPlayerNames(k) << ". " <<std::endl;
         } else{
@@ -60,24 +59,15 @@ int main() {
         k++;
         q++;
 
-        //AI Part!
+        //Need some more work!
+        //AI
         /*
-        if(aiClassObject.ai == true){
-            while(p != playerDataClassObject.playerAmount){
-                std::cout<<"AI Bot "<< p;
-                aiClassObject.AIBot(diceClassObject.diceRoll());
-                std::cout<< aiClassObject.aiDiceRoll;
-                pawnClassObject.displayPlayerPosition();
-                std::this_thread::sleep_for(std::chrono::milliseconds(5000));
-                p++;
-                break;
-            }
-        } else{
-            std::cout<< "NO AI"<<std::endl;
-        }
+        void passPawnClass = pawnClassObject.displayPlayerPosition(k, diceClassObject.ran, playerDataClassObject.playerAmount);
+        aiClassObject.displayBot(playerDataClassObject.playerAmount, diceClassObject.diceRoll(),NULL);
          */
 
-        //Reset k so it does not end up going out of scope for my vector!
+
+        //Reset k so it does not end up going out of scope for the vector!
         if(k == playerDataClassObject.playerAmount){
             k = 0;
         }

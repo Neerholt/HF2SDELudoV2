@@ -11,10 +11,12 @@
 
 class Pawn {
 private:
+    int whichPawn;
+    int pawn1 = 14, pawn2 = 14, pawn3 = 14, pawn4 = 14;
     std::vector<int> playerBoardPosition;
+    std::vector< std::vector<int> > onBoardPawn;
 public:
-    void displayPlayerPosition(int ,int);//Take two parameter first is the player id in the vector, and the second parameter is the dice roll
-    int pawnDecision();
+    void displayPlayerPosition(int ,int, int);//Take two parameter first is the player id in the vector, and the second parameter is the dice roll
     void getBoardInformation();
     void pawnDataDevTool();
     void printVector();

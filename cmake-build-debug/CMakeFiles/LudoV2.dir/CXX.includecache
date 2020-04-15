@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Victo/CLionProjects/LudoV2/Dice.cpp
+C:/Users/Victo/CLionProjects/LudoV2/Pawn.cpp
+Pawn.h
+C:/Users/Victo/CLionProjects/LudoV2/Pawn.h
 iostream
 -
-ctime
--
-Dice.h
-C:/Users/Victo/CLionProjects/LudoV2/Dice.h
 
-C:/Users/Victo/CLionProjects/LudoV2/Dice.h
+C:/Users/Victo/CLionProjects/LudoV2/Pawn.h
+iostream
+-
+vector
+-
 

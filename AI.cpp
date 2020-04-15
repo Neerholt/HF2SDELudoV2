@@ -4,6 +4,7 @@
 
 #include "AI.h"
 #include <iostream>
+#include <thread>
 
 
 bool AI::AIOn() {
@@ -44,4 +45,23 @@ void AI::enableAI() {
 void AI::AIBot(int dice) {
     aiDiceRoll = dice;
     return; aiDiceRoll;
+}
+
+
+//Need some more work!
+void AI::displayBot(int playerDataClass, int diceLiveRoller, int pawnClass) {
+    int p = 0;
+    if(ai == true){
+        while(p != playerDataClass){
+            std::cout<<"AI Bot "<< p;
+            AIBot(diceLiveRoller);
+            std::cout<< diceLiveRoller;
+            std::cout<< pawnClass;
+            std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+            p++;
+            break;
+        }
+    } else{
+        std::cout<< "I is disabled "<<std::endl;
+    }
 }
