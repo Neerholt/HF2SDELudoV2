@@ -9,48 +9,49 @@ void Pawn::displayPlayerPosition(int playerID, int diceRoller , int playerLiveAm
     if(diceRoller == 6){
         std::cout<< "Which pawn do you want to move out [1,2,3,4]? " <<std::endl;
         std::cin >> whichPawn;
-        bool addMoreVectors = true;
-        int s = 1;
-        onBoardPawn.resize(s, std::vector<int>(s,playerID));
+        int s = 0;
 
-            do {
-                if(onBoardPawn[NULL][playerID] == playerID){
-                    std::cout << "onBoardPawn's first vector value aka player id is " << onBoardPawn[NULL][playerID]<< std::endl;
-                    std::cout << "onBoardPawn's total amount of vectors in the main vector onPawnBoard"<<  onBoardPawn.size()<<std::endl;
+            onBoardPawn.resize(1, std::vector<int>(1,playerID));
 
-                    switch (whichPawn){
-                        case 1:
-                            //onBoardPawn[NULL][playerID];
-                            std::cout << "Pawn 1 has been added to your board" << std::endl;
-                            break;
-                        case 2:
-                            std::cout << "Pawn 2 has been added to your board" << std::endl;
-                            break;
-                        case 3:
-                            std::cout << "Pawn 3 has been added to your board" << std::endl;
-                            break;
-                        case 4:
-                            std::cout << "Pawn 4 has been added to your board" << std::endl;
-                            break;
-                        default:
-                            std::cout<<"Error on line " << __LINE__ <<std::endl;
-                            break;
-                    }
-                } else{
-                    onBoardPawn.resize(s, std::vector<int>(1,playerID));
-                }
-                s++;
+           if(onBoardPawn[NULL][playerID] != playerID){
 
-                if(onBoardPawn.size() == playerLiveAmount){
-                    addMoreVectors = false;
-                }
+           } else{
+               do {
+                   if(onBoardPawn[NULL][playerID] == playerID){
+                       std::cout << "onBoardPawn's first vector value aka player id is " << onBoardPawn[NULL][playerID]<< std::endl;
+                       std::cout << "onBoardPawn's total amount of vectors in the main vector onPawnBoard"<<  onBoardPawn.size()<<std::endl;
 
-                if(s == playerLiveAmount){
-                    s = 0;
-                }
+                       switch (whichPawn){
+                           case 1:
+                               //onBoardPawn[NULL][playerID];
+                               std::cout << "Pawn 1 has been added to your board" << std::endl;
+                               break;
+                           case 2:
+                               std::cout << "Pawn 2 has been added to your board" << std::endl;
+                               break;
+                           case 3:
+                               std::cout << "Pawn 3 has been added to your board" << std::endl;
+                               break;
+                           case 4:
+                               std::cout << "Pawn 4 has been added to your board" << std::endl;
+                               break;
+                           default:
+                               std::cout<<"Error on line " << __LINE__ <<std::endl;
+                               break;
+                       }
+                   }
+                   s++;
 
+                   if(onBoardPawn.size() == playerLiveAmount){
+                       addMoreVectors = false;
+                   }
 
-            } while (addMoreVectors != false);
+                   if(s == playerLiveAmount){
+                       s = 0;
+                   }
+
+               } while (addMoreVectors);
+           }
 
     } else{
         std::cout << "You don't have any pawns on the board to move." << std::endl;

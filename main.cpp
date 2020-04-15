@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <chrono>
+#include <thread>
 
 //My own class library.
 #include "playerData.h"
@@ -11,6 +12,7 @@
 
 int main() {
 
+    int p = 0;//AI While loop vector loop player
     int q = 1;//Round counter
     int k = 0;//Player While loop vector loop player
 
@@ -37,7 +39,7 @@ int main() {
 
     //Main Game Loop
     diceClassObject.resetDice();//Reset the dice
-    while(k != 100){//When live version roll out this has to be of type Bool!
+    while(k != 100){//When live version roll out this has to be of type Bool "pawnClassObject.winner == true"!
         std::cin.ignore();//ignore the ENTER after the user ENTERS the last username. DON'T MOVE ME!!
         std::cout << "Press the ENTER key to roll the dice "<</*Get data from the pawn class like if he can move a pawn or not or say you roll and you have 0 pawns on the files and you need to roll a 6 to get a pawn on the filed*/ playerDataClassObject.displayPlayerNames(k)<< "."<<std::endl;
         if (std::cin.get() == '\n'){
@@ -61,13 +63,10 @@ int main() {
 
         //Need some more work!
         //AI
-        /*
-        void passPawnClass = pawnClassObject.displayPlayerPosition(k, diceClassObject.ran, playerDataClassObject.playerAmount);
-        aiClassObject.displayBot(playerDataClassObject.playerAmount, diceClassObject.diceRoll(),NULL);
-         */
+        aiClassObject.displayBot(playerDataClassObject.playerAmount, diceClassObject.diceRoll(),NULL, playerDataClassObject.playerAmount);
 
 
-        //Reset k so it does not end up going out of scope for the vector!
+        //Reset k so it doesn't end up going out of scope for It's vector!
         if(k == playerDataClassObject.playerAmount){
             k = 0;
         }

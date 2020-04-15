@@ -42,26 +42,30 @@ void AI::enableAI() {
     }
 }
 
-void AI::AIBot(int dice) {
-    aiDiceRoll = dice;
-    return; aiDiceRoll;
-}
-
-
 //Need some more work!
-void AI::displayBot(int playerDataClass, int diceLiveRoller, int pawnClass) {
+void AI::displayBot(int playerDataClass, int diceLiveRoller, int pawnClass, int playerLiveAmount) {
     int p = 0;
     if(ai == true){
         while(p != playerDataClass){
-            std::cout<<"AI Bot "<< p;
-            AIBot(diceLiveRoller);
-            std::cout<< diceLiveRoller;
-            std::cout<< pawnClass;
-            std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+            std::cout<<std::endl;//Just to add space
+            std::cout<<"Waiting on AI";
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+            std::cout<<std::endl;//Just to add space
+            std::cout<<"AI Bot "<< p << " you rolled a ";
+            std::cout<< diceLiveRoller << std::endl;
+
+            if(p == playerLiveAmount){
+                p = 0;
+            }
+
+           if(pawnClass == 0){
+               std::cout<<"AI Bot " << p << " has no pawns on the board." << std::endl;
+           }
             p++;
-            break;
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            std::cout<<"AI's turn has ended press ENTER to end AI's turn." << std::endl;
         }
     } else{
-        std::cout<< "I is disabled "<<std::endl;
+        //Nothing
     }
 }

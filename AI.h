@@ -19,7 +19,7 @@ public:
     bool AIOn();// Functions to keep my code DRY
     bool AIOff();// Functions to keep my code DRY
     void AIBot(int);
-    void displayBot(int,int,int);
+    void displayBot(int,int,int,int);
 };
 
 

@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Victo/CLionProjects/LudoV2/Pawn.cpp
-Pawn.h
-C:/Users/Victo/CLionProjects/LudoV2/Pawn.h
+C:/Users/Victo/CLionProjects/LudoV2/AI.cpp
+AI.h
+C:/Users/Victo/CLionProjects/LudoV2/AI.h
 iostream
+-
+thread
 -
 
-C:/Users/Victo/CLionProjects/LudoV2/Pawn.h
+C:/Users/Victo/CLionProjects/LudoV2/AI.h
 iostream
 -
-vector
+string
 -
 

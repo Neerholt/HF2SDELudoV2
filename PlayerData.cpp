@@ -6,7 +6,7 @@
 #include <iostream>
 
 void PlayerData::playerAmountValue() {
-    std::cout << "Enter player amount [MAX 4: MIN 2]: ";
+    std::cout << "Enter player amount [MAX 4]: ";
     std::cin>>playerAmount;
     while(std::cin.fail()) {
         std::cout <<"Error: Enter an integer number!"<<std::endl;
